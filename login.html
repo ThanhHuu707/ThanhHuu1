@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập & Đăng ký</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form>
+        <h2>Tạo tài khoản</h2>
+        <input type="text" placeholder="Tên đăng nhập" id="reg-username" />
+        <input type="password" placeholder="Mật khẩu" id="reg-password" />
+        <button type="button" onclick="register()">Đăng ký</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form>
+        <h2>Đăng nhập</h2>
+        <input type="text" placeholder="Tên đăng nhập" id="login-username" />
+        <input type="password" placeholder="Mật khẩu" id="login-password" />
+        <button type="button" onclick="login()">Đăng nhập</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h3>Đã có tài khoản?</h3>
+          <button class="ghost" onclick="toggleForm(false)">Đăng nhập</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h3>Chưa có tài khoản?</h3>
+          <button class="ghost" onclick="toggleForm(true)">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
